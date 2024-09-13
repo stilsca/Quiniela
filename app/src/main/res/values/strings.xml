@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Quiniela</string>
+    <string name="api_url">http://192.168.100.61/quinielaUTIC/public/Api/</string>
+    <string-array name="jugadas_tipos">
+        <item>Una cifras</item>
+        <item>Dos cifras</item>
+        <item>Tres cifras</item>
+    </string-array>
+    <string-array name="jugadas_posiciones">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+</resources>

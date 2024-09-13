@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".JugadaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese monto"
+                android:background="@drawable/rounded_corner"
+                android:padding="18dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:id="@+id/etMonto"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese numero"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:padding="18dp"
+                android:id="@+id/etNumero"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:padding="18dp"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/cmbPosicion"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:backgroundTint="@color/white"
+                android:textColor="#000"
+                android:padding="18dp"
+                android:textSize="17sp"
+                android:id="@+id/btnAgregar"/>
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaJugadas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Total: 0 Gs."
+                android:id="@+id/tvTotal"
+                android:textSize="20sp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Generar jugada"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#3afa3f"
+                android:textColor="#000"
+                android:padding="18dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:id="@+id/btnFinalizar"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
